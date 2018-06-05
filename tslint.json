@@ -1,0 +1,35 @@
+{
+	"defaultSeverity": "error",
+	"extends": [
+		"tslint:recommended",
+		"tslint-config-airbnb",
+    "tslint-config-prettier"
+	],
+	"rules": {
+		"import-name": false,
+		"interface-name": false,
+		"semicolon": [true, "always"],
+		"variable-name": false,
+		"no-console": false,
+		"ter-indent": [true, "tab"],
+		"no-unused-variable": true,
+		"no-consecutive-blank-lines": true,
+		"object-curly-spacing": [ true, "always" ],
+		"ter-arrow-spacing": [true, { "before": true, "after": true }],
+		"eofline": false,
+		"member-access": false,
+		"no-shadowed-variable": false,
+		"no-this-assignment": false,
+		"ordered-imports": false,
+		"trailing-comma": false,
+		"no-var-requires": false,
+		"object-literal-sort-keys": false,
+		"object-shorthand-properties-first": false,
+		"prefer-const": false,
+		"member-ordering": false,
+		"only-arrow-functions": false
+	},
+	"rulesDirectory": [
+			"./src"
+	]
+}

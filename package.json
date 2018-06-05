@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "EvanClivle",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "joi": "^13.3.0",
+    "koa": "^2.5.1",
+    "koa-body": "^2.6.0",
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.37.10"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/joi": "^13.0.8",
+    "@types/koa": "^2.0.45",
+    "@types/koa-router": "^7.0.28",
+    "@types/sequelize": "^4.27.20",
+    "cross-env": "^5.1.6",
+    "nodemon": "^1.17.5",
+    "ts-node": "^6.0.5",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "start:dev": "cross-env NODE_PATH=src nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/index.ts",
+    "build": "tsc"
+  }
+}
